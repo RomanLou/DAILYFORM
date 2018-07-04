@@ -1,0 +1,120 @@
+:root {
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .3s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+	font: 13px/20px Arial,"Helvetica Neue",Helvetica,sans-serif;
+	color: #7a7b7f;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+
+.container{
+	margin: 0 auto;
+	width: 800px;
+	background: rgb(255,81,47);
+	background: -webkit-linear-gradient(bottom left, rgba(255,81,47,1) 0%, rgba(221,36,118,1) 100%);
+	background: -o-linear-gradient(bottom left, rgba(255,81,47,1) 0%, rgba(221,36,118,1) 100%);
+	background: linear-gradient(to top right, rgba(255,81,47,1) 0%, rgba(221,36,118,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff512f', endColorstr='#dd2476',GradientType=1 );
+	padding: 60px 170px;
+}
+
+.form__logo{
+	float: left;
+	margin-right: 10px;
+}
+
+.form{
+	width: 460px;
+	background-color: #fff;
+	border-radius: 4px;
+	padding: 30px;	
+}	
+
+.form__title{
+	font-size: 24px;
+	font-weight: 700;
+	color: #000;
+	line-height: 26px;
+}
+
+.form__login {
+	clear: both;
+	margin-top: 15px;
+}
+
+.form__link{
+	text-decoration: none;
+	color: #ea355a;
+	transition: none;
+}
+.form__link:hover {
+	border-bottom: 1px solid #ea355a;
+}
+
+.form-body {
+	margin-top: 30px;
+}
+
+.form__field {
+	padding: 14px;
+	background: #b4c1c4;
+	border-radius: 4px;
+	font-size: 14px;
+	margin-bottom: 15px;
+	width: 100%
+}
+.form__field--name {
+	width: 193px;
+	display: inline-block;
+	float: left;
+}
+#field-fname {
+	margin-right: 14px;
+}
+
+.form__button {
+	width: 100%;
+	font-size: 20px;
+	color: #fff;
+	padding: 15px;
+	text-align: center;
+	background: #ea355a;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	border-bottom: 2px solid #bd1962;
+	position: relative;
+	transition: none;
+}
+.form__button:hover {
+	top: 2px;
+	border-bottom-width: 0;
+	margin-bottom: 22px;
+}
